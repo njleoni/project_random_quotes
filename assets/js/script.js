@@ -9,7 +9,7 @@ console.log(currentDay)
 console.log(moment())
 
 $("#redoButton").on("click", function () {
-    var unsplashAPI = "https://source.unsplash.com/random/798x427"
+    var unsplashAPI = "https://source.unsplash.com/collection/89063260/798x427"
     fetch(unsplashAPI)
         .then(function (response) {
             return response;
@@ -23,7 +23,7 @@ $("#redoButton").on("click", function () {
 
 $(document).ready(function () {
     
-    var unsplashAPI = "https://source.unsplash.com/random/798x427"
+    var unsplashAPI = "https://source.unsplash.com/collection/89063260/798x427"
     fetch(unsplashAPI)
         .then(function (response) {
             return response;
