@@ -39,6 +39,7 @@ $("#redoButton").on("click", function () {
             return response.json();
         })
         .then(function (data) {
+            console.log(data);
             $("#quoteText").text(data.quote)           
         })
 })
