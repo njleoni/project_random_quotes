@@ -31,3 +31,14 @@ $(document).ready(function () {
             $("img").attr("src", data.url)           
         })
 })
+
+$("#redoButton").on("click", function () {
+    var quotesAPI = "http://quotes.stormconsultancy.co.uk/random.json"
+    fetch(quotesAPI)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            $("#quoteText").text(data.quote)           
+        })
+})
