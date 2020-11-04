@@ -43,3 +43,15 @@ $("#redoButton").on("click", function () {
             $("#quoteText").text(data.quote)           
         })
 })
+
+$(document).ready(function () {
+    var quotesAPI = "http://quotes.stormconsultancy.co.uk/random.json"
+    fetch(quotesAPI)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            $("#quoteText").text(data.quote)           
+        })
+})
