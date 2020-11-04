@@ -10,3 +10,8 @@
 .bottomFont {
   font-size: small;
 }
+
+
+#listItem {
+border: 1px solid black;
+}
