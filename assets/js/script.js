@@ -16,7 +16,7 @@ $("#redoButton").on("click", function () {
         })
         .then(function (data) {
             console.log(data);
-            $("img").attr("src", data.url)           
+            $("#imgInput").attr("src", data.url)           
         })
     
 })
@@ -30,12 +30,12 @@ $(document).ready(function () {
         })
         .then(function (data) {
             console.log(data);
-            $("img").attr("src", data.url)           
+            $("#imgInput").attr("src", data.url)           
         })
 })
 
 $("#redoButton").on("click", function () {
-    var quotesAPI = "https://quotes.stormconsultancy.co.uk/random.json"
+    var quotesAPI = "http://quotes.stormconsultancy.co.uk/random.json"
     fetch(quotesAPI)
         .then(function (response) {
             return response.json();
@@ -49,7 +49,7 @@ $("#redoButton").on("click", function () {
 })
 
 $(document).ready(function () {
-    var quotesAPI = "https://quotes.stormconsultancy.co.uk/random.json"
+    var quotesAPI = "http://quotes.stormconsultancy.co.uk/random.json"
     fetch(quotesAPI)
         .then(function (response) {
             return response.json();
