@@ -35,29 +35,29 @@ $(document).ready(function () {
 })
 
 $("#redoButton").on("click", function () {
-    var quotesAPI = "https://quotes.stormconsultancy.co.uk/random.json"
+    var quotesAPI = "https://programming-quotes-api.herokuapp.com/quotes/random"
     fetch(quotesAPI)
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
             console.log(data);
-            $("#quoteText").text(data.quote) 
-            quote = data.quote;
-            console.log("test" + quote)
+            $("#quoteText").text(data.en) 
+            quote = data.en;
+            console.log("test" + en)
         })
 })
 
 $(document).ready(function () {
-    var quotesAPI = "https://quotes.stormconsultancy.co.uk/random.json"
+    var quotesAPI = "https://programming-quotes-api.herokuapp.com/quotes/random"
     fetch(quotesAPI)
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
             console.log(data);
-            $("#quoteText").text(data.quote)
-            quote = data.quote;
+            $("#quoteText").text(data.en)
+            quote = data.en;
         })
 })
 
