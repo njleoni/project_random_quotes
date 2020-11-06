@@ -35,7 +35,7 @@ $(document).ready(function () {
 })
 
 $("#redoButton").on("click", function () {
-    var quotesAPI = "http://quotes.stormconsultancy.co.uk/random.json"
+    var quotesAPI = "https://quotes.stormconsultancy.co.uk/random.json"
     fetch(quotesAPI)
         .then(function (response) {
             return response.json();
@@ -49,7 +49,7 @@ $("#redoButton").on("click", function () {
 })
 
 $(document).ready(function () {
-    var quotesAPI = "http://quotes.stormconsultancy.co.uk/random.json"
+    var quotesAPI = "https://quotes.stormconsultancy.co.uk/random.json"
     fetch(quotesAPI)
         .then(function (response) {
             return response.json();
