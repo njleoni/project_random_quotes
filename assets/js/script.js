@@ -1,13 +1,15 @@
-
+// Declare variables in global memory
 var currentDay = (moment().format("MMMM Do YYYY"))
 var quotes = [];
 var quote = "";
 
+// append the day's date onto the page
 $(".dateTime").text("Today's date is " + currentDay)
 
-console.log(currentDay)
-console.log(moment())
+// console.log(currentDay)
+// console.log(moment())
 
+// event listener for 'redo' button for photos
 $("#redoButton").on("click", function () {
     var unsplashAPI = "https://source.unsplash.com/collection/89063260/798x427"
     fetch(unsplashAPI)
@@ -21,6 +23,7 @@ $("#redoButton").on("click", function () {
     
 })
 
+// Call api for random tech photo on load
 $(document).ready(function () {
     
     var unsplashAPI = "https://source.unsplash.com/collection/89063260/798x427"
@@ -33,7 +36,7 @@ $(document).ready(function () {
             $("img").attr("src", data.url)           
         })
 })
-
+// event listener for 'redo' button for quotes
 $("#redoButton").on("click", function () {
     var quotesAPI = "https://programming-quotes-api.herokuapp.com/quotes/random"
     fetch(quotesAPI)
@@ -48,6 +51,7 @@ $("#redoButton").on("click", function () {
         })
 })
 
+// Call api for random quote on load
 $(document).ready(function () {
     var quotesAPI = "https://programming-quotes-api.herokuapp.com/quotes/random"
     fetch(quotesAPI)
@@ -61,6 +65,7 @@ $(document).ready(function () {
         })
 })
 
+// Event listener for saving quotes to local storage
 $("#saveButton").on("click", function () {
     quotes.push(quote)
     localStorage.setItem("Fav Quotes:", JSON.stringify(quotes))
@@ -72,7 +77,7 @@ if (localStorage.getItem("Fav Quotes:") !== null) {
     localStorage.setItem("Fav Quotes:", JSON.stringify(quotes))
     showQuotes();
 }
-  
+//  Append saved quotes to the page 
 function newQuote(x) {
     var listItem = document.createElement("div");
     
@@ -83,6 +88,7 @@ function newQuote(x) {
         
 }
 
+// Function to show quotes on the page
 function showQuotes() {
     var quoteList = JSON.parse(localStorage.getItem(localStorage.key("Fav Quotes:")))
 
