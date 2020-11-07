@@ -1,14 +1,17 @@
+// Declare variables in global memory
 // Moment.JS call and formatting
 var currentDay = (moment().format("MMMM Do YYYY"))
 // Empty array to store saved quotes
 var quotes = [];
 // Empty variable to store quote
 var quote = "";
+
 // Append todays date from Moment.JS to html
 $(".dateTime").text("Today's date is " + currentDay)
 
 // console.log(currentDay)
 // console.log(moment())
+
 
 // Event listener for redo button to grab a new randomly generated image and append it
 $("#redoButton").on("click", function () {
@@ -25,7 +28,7 @@ $("#redoButton").on("click", function () {
     
 })
 
-// Once the page is ready, grab a randomly generated image and append it
+// Call api for random tech photo on load
 $(document).ready(function () {
     
     var unsplashAPI = "https://source.unsplash.com/collection/89063260/798x427"
@@ -56,7 +59,7 @@ $("#redoButton").on("click", function () {
         })
 })
 
-// Once the page is ready, grab a randomly generated quote and append it
+// Once the page is ready, call api to randomly generate quote and append it
 $(document).ready(function () {
 
     var quotesAPI = "https://programming-quotes-api.herokuapp.com/quotes/random"
@@ -72,7 +75,7 @@ $(document).ready(function () {
         })
 })
 
-// Event listener for the save button
+// Event listener for saving quotes to local storage
 $("#saveButton").on("click", function () {
     // Push value saved in quote to the quotes array
     quotes.push(quote)
@@ -101,6 +104,7 @@ function newQuote(x) {
 }
 
 
+// Function to show quotes on the page
 function showQuotes() {
     // Grab data from local Storage, and assign it the quoteList variable
     var quoteList = JSON.parse(localStorage.getItem(localStorage.key("Fav Quotes:")))
