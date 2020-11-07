@@ -6,13 +6,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 <body>
   <div class="top-bar navBar">
     <div class="large-12 cell text-center">
-        <h1>Random quote generator</h1>
+        <h1 class="fontGoog headerColor">random tech quote generator</h1>
     </div>
   </div>
     
@@ -23,19 +24,19 @@
               <div class="large-4 medium-4 medium-push-2 cell">
                 <div class="card noBorder">
                   <div class="card-divider roundBorder">
-                    <h4>Save your favorite quotes</h4>
+                    <h4 class="fontGoog">Save your favorite quotes</h4>
                   </div class="quotes">
-                    <div id="quoteList"></div>
+                    <div class="fontGoog" id="quoteList"></div>
                   </div>
               </div>
               <div class="large-8 medium-8 medium-pull-2 cell">
                 <div class="card roundBorder" style="height: auto; width: 800px">
                   <div class="card-divider">
-                    <h4 class="dateTime"></h4>
+                    <h4 class="dateTime fontGoog"></h4>
                   </div>
-                  <img src="">
+                  <img id="imgInput" src="">
                   <div class="card-section">
-                    <h4 id="quoteText"></h4>
+                    <h4 class="fontGoog" id="quoteText"></h4>
                   </div>
                 </div>
                     <div class="button-group hollow align-justify">
@@ -48,11 +49,13 @@
       </div>
     </div>
 
-  <div class="sticky is-stuck is-at-bottom bottomBar">
-    <div class="large-12 cell text-center">
-      <h1 class="bottomFont">This is the bottom if needed</h1>
+  <!-- <div class="sticky is-stuck is-at-bottom bottomBar">
+    <div id="gitHub">
+      <a href="https://github.com/njleoni" target="_blank">
+        <img src="./Assets/img/github.png" class="img-fluid" alt="GitHub" />
+      </a>
     </div>
-  </div>
+  </div> -->
 
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/foundation.js"></script>

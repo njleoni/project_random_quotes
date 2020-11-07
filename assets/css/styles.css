@@ -1,17 +1,15 @@
 body {
-  background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-  opacity: 0.95;
+  background-image: url(/assets/img/matrixBackground1.jpg);
+  opacity: 0.8;
 }
 
 .navBar {
   margin-bottom: 30px;
-  /* background-color: #e6e6e6; */
-  /* border-bottom-style: 1px solid rgb(202, 202, 202); */
+  background-color: rgb(9, 11, 9);
 }
 
 .bottomBar {
   background-color: #e6e6e6;
-  /* border-top-style: 1px solid rgb(202, 202, 202); */
 }
 
 .bottomFont {
@@ -19,8 +17,6 @@ body {
 }
 
 #listItem {
-  /* border: 1px solid #e6e6e6; */
-  /* border: 1px solid rgb(202, 202, 202); */
   border-radius: 5px;
   margin-top: 5px;
   padding: 5px;
@@ -29,7 +25,6 @@ body {
 
 .roundBorder {
   border-radius: 5px;
-  /* border: 1px solid rgb(202, 202, 202); */
 }
 
 .noBorder {
@@ -39,5 +34,26 @@ body {
 
 #redoButton,
 #saveButton {
-  background-color: #e6e6e6;
+  font-family: "Share Tech Mono", monospace;
+  background-color: black;
+  color: rgb(50, 179, 116);
+  border: 2px solid #e6e6e6;
+  font-weight: bold;
+}
+
+.fontGoog {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.headerColor {
+  color: rgb(50, 179, 116);
+}
+
+#gitHub {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+.align-justify {
+  margin-left: 30px;
 }

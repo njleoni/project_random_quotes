@@ -16,7 +16,7 @@ $("#redoButton").on("click", function () {
         })
         .then(function (data) {
             console.log(data);
-            $("img").attr("src", data.url)           
+            $("#imgInput").attr("src", data.url)           
         })
     
 })
@@ -30,7 +30,7 @@ $(document).ready(function () {
         })
         .then(function (data) {
             console.log(data);
-            $("img").attr("src", data.url)           
+            $("#imgInput").attr("src", data.url)           
         })
 })
 
@@ -50,6 +50,7 @@ $("#redoButton").on("click", function () {
 
 $(document).ready(function () {
     var quotesAPI = "https://programming-quotes-api.herokuapp.com/quotes/random"
+
     fetch(quotesAPI)
         .then(function (response) {
             return response.json();
