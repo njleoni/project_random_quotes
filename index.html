@@ -11,17 +11,20 @@
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 <body>
+  <!-- this is the nav bar -->
   <div class="top-bar navBar">
     <div class="large-12 cell text-center">
         <h1 class="fontGoog headerColor">random tech quote generator</h1>
     </div>
   </div>
-    
+  <!-- this is the central grid for the api rendered image, api rendered quote   -->
+  <!-- and where the quotes save -->
   <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
             <div class="grid-x grid-padding-x">
               <div class="large-4 medium-4 medium-push-2 cell">
+                <!-- this is where the quotes will save -->
                 <div class="card noBorder">
                   <div class="card-divider roundBorder">
                     <h4 class="fontGoog">Save your favorite quotes</h4>
@@ -29,16 +32,21 @@
                     <div class="fontGoog" id="quoteList"></div>
                   </div>
               </div>
+              <!-- this is where the date, img and quote will appear -->
               <div class="large-8 medium-8 medium-pull-2 cell">
                 <div class="card roundBorder" style="height: auto; width: 800px">
+                  <!-- date goes here -->
                   <div class="card-divider">
                     <h4 class="dateTime fontGoog"></h4>
                   </div>
+                  <!-- image goes here -->
                   <img id="imgInput" src="">
                   <div class="card-section">
+                    <!-- quotes go here -->
                     <h4 class="fontGoog" id="quoteText"></h4>
                   </div>
                 </div>
+                <!-- buttons go down here -->
                     <div class="button-group hollow align-justify">
                       <a class="secondary button redo roundBorder" id="redoButton">Redo</a>
                       <a class="secondary button save roundBorder" id="saveButton">Save</a>
