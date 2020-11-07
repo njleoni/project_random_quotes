@@ -4,6 +4,8 @@ This application offers a digital quote of the day calendar for developers and o
 
 Using calls to three APIs, the application displays the day's date, a randomly generated photo and a randomly generated quote about computer programming and technology.
 
+<img src="Quote_generator_image.png" width="50%">
+
 ## To use the app
 
 Users can navigate to https://njleoni.github.io/project_random_quotes/ to load the app. Once loaded, the page functions much like a traditional quote-of-the-day calendar. However, unlike a static calendar, users can click the "Redo" button to see a new photo and quote for the day or they can click the "Save" button to save the quote into a list of favorite quotes, which persists in local storage.
