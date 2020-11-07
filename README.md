@@ -4,7 +4,7 @@ This application offers a digital quote of the day calendar for developers and o
 
 Using calls to three APIs, the application displays the day's date, a randomly generated photo and a randomly generated quote about computer programming and technology.
 
-<img src="Quote_generator_image.png" width=50%>
+![Screenshot](/assets/img/Quote_generator_image.png)
 
 ## To use the app
 
