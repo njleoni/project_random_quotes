@@ -1,21 +1,33 @@
+/* add image to background */
 body {
-  background-image: url(/assets/img/matrixBackground1.jpg);
-  opacity: 0.8;
+  background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  opacity: 0.9;
 }
-
+/* change the font */
+.fontGoog {
+  font-family: "Share Tech Mono", monospace;
+}
+/* rounds out cards */
+.roundBorder {
+  border-radius: 5px;
+}
+/* removes borders */
+.noBorder {
+  border: transparent;
+  background-color: transparent;
+}
+/* nav bar styling */
 .navBar {
   margin-bottom: 30px;
   background-color: rgb(9, 11, 9);
 }
 
-.bottomBar {
-  background-color: #e6e6e6;
+/* header styling */
+.headerColor {
+  color: rgb(50, 179, 116);
 }
 
-.bottomFont {
-  font-size: small;
-}
-
+/* styling for list items */
 #listItem {
   border-radius: 5px;
   margin-top: 5px;
@@ -23,15 +35,7 @@ body {
   background-color: #e6e6e6;
 }
 
-.roundBorder {
-  border-radius: 5px;
-}
-
-.noBorder {
-  border: transparent;
-  background-color: transparent;
-}
-
+/* styling changes to save and redo buttons */
 #redoButton,
 #saveButton {
   font-family: "Share Tech Mono", monospace;
@@ -40,20 +44,7 @@ body {
   border: 2px solid #e6e6e6;
   font-weight: bold;
 }
-
-.fontGoog {
-  font-family: "Share Tech Mono", monospace;
-}
-
-.headerColor {
-  color: rgb(50, 179, 116);
-}
-
-#gitHub {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-}
+/* realign redo button to match save */
 .align-justify {
   margin-left: 30px;
 }
